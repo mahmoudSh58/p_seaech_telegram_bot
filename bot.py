@@ -17,11 +17,6 @@ connect = psycopg2.connect(url, sslmode='require')
 cursor = connect.cursor()
 
 
-logging.basicConfig(
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',level=logging.INFO)
-logger=logging.getLogger(__name__)
-
-
 ad , entr ,nam ,date_b , countr ,desc , m_fel, w_f_1 , w_f_2 , fel ,c_fel,link_w , phone ,social_w ,kyc , finsh ,send= map(chr,range(17))
 
 prof , edit , back_p  = map(chr,range(17,20))
