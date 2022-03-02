@@ -8,8 +8,8 @@ from start_p import start
 from add_order import *
 import os
 import psycopg2
-import sys
 from vars import *
+import sys
 
 # profile programer
 

@@ -3,9 +3,6 @@ from telegram import *
 from telegram.ext import *
 import datetime
 from urllib.request import urlopen
-from admin import *
-from start_p import start
-from add_order import *
 import os
 import psycopg2
 import sys
