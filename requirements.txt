@@ -57,7 +57,6 @@ pytest==6.1.1
 python-dateutil==2.8.1
 python-telegram-bot==12.7
 pytz==2020.5
-pywin32-ctypes==0.2.0
 requests==2.27.1
 rfc3986==1.5.0
 scrypt==0.8.19
@@ -81,5 +80,3 @@ wcwidth==0.2.5
 whichcraft==0.6.1
 wrapt==1.12.1
 yarg==0.1.9
-zope.event==4.5.0
-zope.interface==5.1.2
