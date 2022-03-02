@@ -39,10 +39,22 @@ def profile(update : Update , context: CallbackContext) -> str:
 #---------------------
 
 
+def hello():
+    text = '''تم ايعادة تشغيل البوت ارسل
+/start 
+لتشغيل البوت من جديد'''
+    cursor.execute(f'''SELECT "ID" FROM "PERSON" ''')
+    connect.commit()
+    users = cursor.fetchall()
+    for i in users :
+        bot.send_message(i[0],text=text)
 
+    cursor.execute(f'''UPDATE "ORDERS" SET "A_ID"= NULL WHERE "STATE" = 'W' ''')
+    connect.commit()
 
 
 def main() -> None:
+    hello()
     updater = Updater(token,use_context=True)
     dispatcher = updater.dispatcher
 
