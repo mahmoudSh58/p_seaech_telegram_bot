@@ -6,8 +6,8 @@ from urllib.request import urlopen
 from admin import *
 from add_order import *
 import os
-import psycopg2
 from vars import *
+import psycopg2
 
 
 
