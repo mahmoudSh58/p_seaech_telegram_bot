@@ -1,5 +1,3 @@
-token = "5077037030:AAGzMcx_QR_nnuhc-gqzDb81yYFtmLyMsMU"
-
 import logging
 from telegram import *
 from telegram.ext import *
@@ -12,7 +10,8 @@ import os
 import psycopg2
 import sys
 
-url = 'postgres://wrhuzcmmpkdwsu:de85b41caa04428d064c150cffa270e3bcbaf368d7e06ff01c1a3a394e86f480@ec2-79-125-93-182.eu-west-1.compute.amazonaws.com:5432/dc3gdvkjqoqslh'
+url = str(os.environ['DATABASE_URL'])
+token = str(os.environ['TOKEN'])
 connect = psycopg2.connect(url, sslmode='require')
 cursor = connect.cursor()
 
